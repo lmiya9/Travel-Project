@@ -3,12 +3,12 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/whistler-village.jpeg");
+    url("../images/whistler-village-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   aspect-ratio: 16/9;
