@@ -1,9 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #1A2549;
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .hero {
@@ -42,7 +43,7 @@ body {
 }
 
 .hero a {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 8px 16px;
   margin-top: 15px;
@@ -52,7 +53,7 @@ body {
 }
 
 .hero a:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 @media (max-width: 900px) {
@@ -62,4 +63,38 @@ body {
   .hero h2 {
     font-size: 20px;
   }
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+}
+
+.box {
+  padding: 100px;
+  margin: 0 auto;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../images/Season-in-Whistler-Panoramic-1-min.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  transition: all ease-in-out 150ms;
+}
+
+footer a:hover {
+  opacity: 0.6;
 }
