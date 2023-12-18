@@ -1,3 +1,65 @@
-h1 {
+body {
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/whistler-village.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero a {
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 70px;
+  line-height: 1.5;
+}
+
+.hero h2 {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.hero h3 {
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+
+.hero a {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  padding: 8px 16px;
+  margin-top: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all ease-in-out 200ms;
+}
+
+.hero a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
 }
