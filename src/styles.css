@@ -7,6 +7,11 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+.img-responsive {
+  max-width: 100%;
+}
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/whistler-village-2.jpg");
@@ -56,24 +61,60 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 900px) {
-  .hero h1 {
-    font-size: 40px;
-  }
-  .hero h2 {
-    font-size: 20px;
-  }
-}
 
-.boxes {
+.grid {
   display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
+  grid-gap: 60px;
 }
 
-.box {
-  padding: 100px;
-  margin: 0 auto;
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 50px;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #1A2549;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #1A2549;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1A2549;
+  opacity: 0.7;
+}
+
 
 footer {
   color: white;
@@ -97,4 +138,28 @@ footer a {
 
 footer a:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 1000px) {
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .grid-2-columns {
+  grid-template-columns: 1fr ;
+}
+  .grid-3-columns {
+  grid-template-columns: 1fr ;
+}
+  .grid-3-columns-with-first-narrow{
+    grid-template-columns: 1fr;
+  }
+  .section {
+  padding: 20px;
+  margin-left: 10px;
+}
+
 }
